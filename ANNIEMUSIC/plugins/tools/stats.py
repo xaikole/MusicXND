@@ -24,7 +24,7 @@ from config import BANNED_USERS
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
     await message.reply_video(
-        video=config.STATS_VID_URL,
+        video=config.STATS_IMG_URL,
         caption=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
@@ -63,7 +63,7 @@ async def overall_stats(client, CallbackQuery, _):
         config.AUTO_LEAVING_ASSISTANT,
         config.DURATION_LIMIT_MIN,
     )
-    med = InputMediaVideo(media=config.STATS_VID_URL, caption=text)
+    med = InputMediaVideo(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
@@ -126,10 +126,10 @@ async def bot_stats(client, CallbackQuery, _):
         call["collections"],
         call["objects"],
     )
-    med = InputMediaVideo(media=config.STATS_VID_URL, caption=text)
+    med = InputMediaVideo(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_video(
-            video=config.STATS_VID_URL, caption=text, reply_markup=upl
+            video=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
