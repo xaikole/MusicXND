@@ -12,12 +12,12 @@ from ANNIEMUSIC.utils.inline import supp_markup
 from config import BANNED_USERS
 
 
-@app.on_message(filters.command("ping","toe", prefixes=["/"]) & ~BANNED_USERS)
+@app.on_message(filters.command("ping", prefixes=["/"]) & ~BANNED_USERS)
 @language
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_video(
-        image="https://telegra.ph/file/9deb97c59b1d281a48c7a.jpg",
+        video="https://telegra.ph/file/c6a452d53f84dfd125b4c.mp4",
         caption=_["ping_1"].format(app.mention),
     )
     pytgping = await JARVIS.ping()
