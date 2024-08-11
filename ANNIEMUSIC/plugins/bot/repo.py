@@ -4,7 +4,7 @@ from ANNIEMUSIC import app
 from config import BOT_USERNAME
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя jคяv¡ร яєρσѕ ✪
+✪ ωεℓ¢σмє ƒσя яєρσѕ ✪
  
  ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
  
@@ -31,13 +31,13 @@ async def start(_, msg):
             ],
      
             [
-             InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/JARVIS_V2"),
-             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/JARVIS_V_SUPPORT"),
+             InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/CHALCOGENXD"),
+             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/PENGUIN_X_STORE"),
              ],
      
              [
-             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/Dora_Hub"),          
-             InlineKeyboardButton("︎ᴍᴜsɪᴄ", url=f"https://github.com/doraemon890/ANNIE-X-MUSIC"),
+             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/+UFYcQJKqRLA2MWVk"),          
+             InlineKeyboardButton("︎ᴍᴜsɪᴄ", url=f"https://github.com/CHALCOGEN645/PENGUIN-X-MUSIC"),
              ],
      
               ]
@@ -45,7 +45,7 @@ async def start(_, msg):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg",
+        photo="https://telegra.ph/file/9deb97c59b1d281a48c7a.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
