@@ -51,7 +51,7 @@ async def chat_gpt(app, message):
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
 
         if len(message.command) < 2:
-            await message.reply_text(f"Hello sir/ma'am, I am PENGUIN ARTIFICIAL INTELLIGENCE. How can I help you today?")
+            await message.reply_text(f"Hᴇʟʟᴏ Sɪʀ/Mᴀ'ᴀᴍ, I Aᴍ Pᴇɴɢᴜɪɴ Aʀᴛɪғɪᴄɪᴀʟ Iɴᴛᴇʟʟɪɢᴇɴᴄᴇ. Hᴏᴡ Cᴀɴ I Hᴇʟᴘ Yᴏᴜ Tᴏᴅᴀʏ?")
         else:
             query = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
