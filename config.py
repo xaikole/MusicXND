@@ -13,12 +13,12 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Specify where to get the following credentials
 OWNER_USERNAME = getenv("OWNER_USERNAME", "skoyi19")
-BOT_USERNAME = getenv("BOT_USERNAME", "PENGUIN_X_MUSIC_BOT")
-BOT_NAME = getenv("BOT_NAME", "˹𝙿𝙴𝙽𝙶𝚄𝙸𝙽 𓃠 𝙼ᴜsɪᴄ˼♪")
+BOT_USERNAME = getenv("BOT_USERNAME", "musicXaixkobot")
+BOT_NAME = getenv("BOT_NAME", "мυsιc ダ χαιкσ")
 ASSUSERNAME = getenv("ASSUSERNAME", "PENGUIN_XC")
-EVALOP = list(map(int, getenv("EVALOP", "7106271744").split()))
+EVALOP = list(map(int, getenv("EVALOP", "6613797870").split()))
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOGGER_ID = int(getenv("LOGGER_ID", -1002041048920))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002231378383))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
 GPT_API = getenv("GPT_API")
@@ -28,13 +28,13 @@ OWNER_ID = int(getenv("OWNER_ID", 6474577612))
 # Heroku deployment settings - Refer to Heroku documentation on how to obtain these
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/MOON-CODES/MOON-CODESVR")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/xaikole/MusicXND.git")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support and contact information - Provide your own support channels
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ofcbotxaiko")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/anons_chat_group")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/cari_teman_random_pacar")
 
 # Server limits and configurations - These can be set based on your server configurations
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
@@ -48,8 +48,8 @@ SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "22b6125bfe224587b722d6815002db2
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "c9c63c6fbf2f467c8bc68624851e9773")
 
 # Telegram file size limits - Set these according to your requirements
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 
 # Pyrogram session strings - You need to generate these yourself
 STRING1 = getenv("STRING_SESSION", None)
