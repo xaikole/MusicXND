@@ -18,7 +18,7 @@ def track_markup(_, user_id, channel, fplay):
             InlineKeyboardButton(text="▢ sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text="๏ ᴍᴏʀᴇ ๏", callback_data=f"PanelMarkup None|{chat_id}",),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
 
@@ -65,7 +65,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text="๏ ᴍᴏʀᴇ ๏", callback_data=f"PanelMarkup None|{chat_id}",),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
 
@@ -111,7 +111,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text="๏ ᴍᴏʀᴇ ๏", callback_data=f"PanelMarkup None|{chat_id}",),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
 
@@ -131,7 +131,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text="๏ ᴍᴏʀᴇ ๏", callback_data=f"PanelMarkup None|{chat_id}",),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
 
@@ -207,7 +207,7 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text="๏ ᴍᴏʀᴇ ๏", callback_data=f"PanelMarkup None|{chat_id}"),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
 
